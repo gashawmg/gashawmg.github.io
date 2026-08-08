@@ -3,7 +3,7 @@ layout: post
 title: "How ChemPal Tutor Helps Students Learn Chemistry"
 date: 2026-08-08
 author: "Gashaw M. Goshu, Ph.D. in Chemistry"
-description: "See how ChemPal Tutor teaches chemistry step by step with adaptive explanations, visual structures, practice tools, feedback, 16 languages, and voice support."
+description: "See how ChemPal Tutor teaches chemistry step by step — adaptive explanations, visual structures, practice tools, 16 languages, and voice support."
 categories: [chemistry, education]
 tags: [chemistry tutor, AI chemistry help, Lewis structures, organic chemistry, study tools, multilingual learning]
 image: /assets/img/chempal-tutor-social.png
