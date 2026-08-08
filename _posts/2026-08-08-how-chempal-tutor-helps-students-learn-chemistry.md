@@ -2,7 +2,7 @@
 layout: post
 title: "How ChemPal Tutor Helps Students Learn Chemistry"
 date: 2026-08-08
-author: Gashaw M. Goshu
+author: "Gashaw M. Goshu, Ph.D"
 description: "See how ChemPal Tutor teaches chemistry step by step with adaptive explanations, visual structures, practice tools, feedback, 16 languages, and voice support."
 categories: [chemistry, education]
 tags: [chemistry tutor, AI chemistry help, Lewis structures, organic chemistry, study tools, multilingual learning]
@@ -182,15 +182,43 @@ Chemistry gets more manageable when you can ask questions freely, see how soluti
 
 ## Watch ChemPal Tutor in action
 
-See the latest language and voice updates in this short video:
+Three short videos show how the app works in practice — a tour of the platform, a full
+problem-solving walkthrough, and the latest language and voice features.
 
-<div class="video-wrapper" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;margin:1rem 0;">
-  <iframe src="https://www.youtube.com/embed/R6Wbhx_h37E" title="ChemPal Tutor languages and voice update"
+### App general overview
+
+A tour of ChemPal Tutor’s capabilities: how the tutor is organised and what it can help you study.
+
+<div class="video-wrapper" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;margin:1rem 0 2.2rem;">
+  <iframe src="https://www.youtube.com/embed/7dtM7ny_pqQ" title="App general overview"
     style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
     loading="lazy" allowfullscreen></iframe>
 </div>
 
-Prefer a direct link? [Watch the ChemPal Tutor languages and voice update on YouTube](https://youtu.be/R6Wbhx_h37E).
+### Step-by-step demo
+
+An interactive problem-solving walkthrough showing how a chemistry question is broken into steps.
+
+<div class="video-wrapper" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;margin:1rem 0 2.2rem;">
+  <iframe src="https://www.youtube.com/embed/CuEVg1uTNok" title="Step-by-step demo"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    loading="lazy" allowfullscreen></iframe>
+</div>
+
+### Languages and voice update
+
+A look at the 16-language support and the chemistry-tuned, native-like text-to-speech.
+
+<div class="video-wrapper" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;margin:1rem 0 2.2rem;">
+  <iframe src="https://www.youtube.com/embed/R6Wbhx_h37E" title="Languages and voice update"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    loading="lazy" allowfullscreen></iframe>
+</div>
+
+Prefer direct links? Watch the
+[app general overview](https://www.youtube.com/watch?v=7dtM7ny_pqQ),
+the [step-by-step demo](https://youtu.be/CuEVg1uTNok), and the
+[languages and voice update](https://youtu.be/R6Wbhx_h37E) on YouTube.
 
 ## Frequently asked questions
 
@@ -237,6 +265,7 @@ It runs in any modern browser at [chempal.pro](https://chempal.pro/) — no inst
   "@type": "SoftwareApplication",
   "name": "ChemPal Tutor",
   "url": "https://chempal.pro/",
+  "author": {"@type":"Person","name":"Gashaw M. Goshu, Ph.D"},
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "Web browser",
   "description": "An AI-powered chemistry tutor offering step-by-step explanations, visual molecular structures, interactive Lewis structure practice, flashcards, quizzes, progress tracking, voice support, and 16-language learning.",
