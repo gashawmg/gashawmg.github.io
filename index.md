@@ -1,10 +1,16 @@
 ---
 layout: home
 title: ChemPal Tutor Blog
+list_title: Latest articles
+
+# ── Hero section ──────────────────────────────────────────────
+hero_eyebrow: "AI-powered chemistry tutoring"
+hero_title: "Chemistry, explained"
+hero_highlight: "step by step"
+hero_text: >-
+  Guides, product updates, and study tips from ChemPal Tutor — an AI tutor that
+  works through problems one step at a time, renders molecular structures, and
+  teaches in 16 languages with voice support.
+cta_text: "Try ChemPal Tutor free →"
+cta_url: "https://chempal.pro/"
 ---
-
-Guides, product updates, and study tips from **[ChemPal Tutor](https://chempal.pro/)** — an
-AI-powered chemistry tutor that explains problems step by step, renders molecular structures,
-and supports 16 languages with voice playback.
-
-[Try ChemPal Tutor free →](https://chempal.pro/)
