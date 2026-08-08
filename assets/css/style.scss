@@ -1,1 +1,226 @@
+---
+# This empty front matter block is REQUIRED — it tells Jekyll to process the file.
+# Upload to: assets/css/style.scss
+---
 
+@import "minima";
+
+/* ─────────────────────────────────────────────────────────────
+   ChemPal Tutor blog theme
+   Brand colours taken from the app (client/src/index.css)
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  --brand-blue:   #2563eb;
+  --brand-green:  #2dd4a0;
+  --brand-purple: #8b5cf6;
+  --ink:          #0f172a;
+  --body:         #334155;
+  --muted:        #64748b;
+  --line:         #e2e8f0;
+  --surface:      #ffffff;
+  --surface-alt:  #f8fafc;
+}
+
+/* ── Base typography ───────────────────────────────────────── */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, sans-serif;
+  color: var(--body);
+  background: var(--surface-alt);
+  font-size: 18px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  max-width: 760px;
+  padding: 0 22px;
+}
+
+h1, h2, h3, h4 {
+  color: var(--ink);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: 2.35rem; margin-top: 2.2rem; }
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2.6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+}
+h3 { font-size: 1.25rem; margin-top: 2rem; }
+
+p { margin-bottom: 1.25rem; }
+
+a {
+  color: var(--brand-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover { text-decoration: underline; }
+
+/* ── Site header ───────────────────────────────────────────── */
+.site-header {
+  background: var(--surface);
+  border-top: 4px solid var(--brand-blue);
+  border-bottom: 1px solid var(--line);
+  min-height: 62px;
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--ink) !important;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+}
+
+.site-nav .page-link,
+.site-nav .page-link:visited {
+  color: var(--body);
+  font-weight: 500;
+}
+
+/* ── Home page post list ───────────────────────────────────── */
+.home h2.post-list-heading {
+  border-top: 0;
+  padding-top: 0;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.post-list { margin-left: 0; list-style: none; }
+
+.post-list > li {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 24px 26px;
+  margin-bottom: 20px;
+  transition: box-shadow .18s ease, transform .18s ease, border-color .18s ease;
+}
+
+.post-list > li:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, .08);
+  transform: translateY(-2px);
+}
+
+.post-meta {
+  color: var(--muted);
+  font-size: .82rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-weight: 600;
+}
+
+.post-link {
+  display: block;
+  font-size: 1.5rem !important;
+  font-weight: 700;
+  color: var(--ink) !important;
+  margin: 6px 0 0;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+.post-link:hover { color: var(--brand-blue) !important; text-decoration: none; }
+
+/* ── Post page ─────────────────────────────────────────────── */
+.post-header { margin-bottom: 1.5rem; }
+
+.post-title {
+  font-size: 2.5rem !important;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.post-content { color: var(--body); }
+
+.post-content li { margin-bottom: .45rem; }
+
+.post-content ul li::marker { color: var(--brand-green); }
+.post-content ol li::marker { color: var(--brand-blue); font-weight: 700; }
+
+/* Table of contents (from the `* TOC {:toc}` block) */
+#markdown-toc {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--brand-green);
+  border-radius: 0 12px 12px 0;
+  padding: 20px 24px 20px 42px;
+  margin: 2rem 0 2.5rem;
+  font-size: .95rem;
+}
+#markdown-toc::before {
+  content: "On this page";
+  display: block;
+  margin-left: -18px;
+  margin-bottom: .6rem;
+  font-weight: 700;
+  color: var(--ink);
+  text-transform: uppercase;
+  font-size: .78rem;
+  letter-spacing: .08em;
+}
+#markdown-toc li { margin-bottom: .3rem; }
+
+/* Call-to-action blockquote */
+blockquote {
+  background: linear-gradient(135deg, rgba(37,99,235,.07), rgba(139,92,246,.07));
+  border-left: 4px solid var(--brand-blue);
+  border-radius: 0 12px 12px 0;
+  color: var(--ink);
+  font-style: normal;
+  font-size: 1.05rem;
+  letter-spacing: 0;
+  padding: 20px 24px;
+  margin: 2.5rem 0;
+}
+blockquote > :last-child { margin-bottom: 0; }
+
+/* Code */
+code, pre { font-size: .88rem; border-radius: 8px; }
+pre { padding: 16px; background: #0f172a; border: 0; }
+pre code { color: #e2e8f0; }
+code.highlighter-rouge {
+  background: #eef2ff;
+  color: #4338ca;
+  padding: .15em .4em;
+}
+
+img { border-radius: 12px; max-width: 100%; }
+
+/* Responsive video wrapper used in the post */
+.video-wrapper { border-radius: 12px; overflow: hidden; }
+
+/* ── Footer ────────────────────────────────────────────────── */
+.site-footer {
+  background: var(--ink);
+  border-top: 0;
+  color: #94a3b8;
+  margin-top: 4rem;
+  padding: 2.5rem 0;
+}
+.site-footer .footer-heading { color: #fff; font-weight: 700; }
+.site-footer a, .site-footer a:visited { color: var(--brand-green); }
+.site-footer .footer-col-wrapper { color: #94a3b8; font-size: .92rem; }
+
+/* Hide the auto-generated contact/social list that repeats the site title */
+.site-footer .footer-col-1 ul.contact-list { list-style: none; margin-left: 0; }
+
+/* ── Mobile ────────────────────────────────────────────────── */
+@media screen and (max-width: 600px) {
+  body { font-size: 17px; }
+  .post-title { font-size: 1.85rem !important; }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.35rem; }
+  .post-link { font-size: 1.25rem !important; }
+  .post-list > li { padding: 20px; }
+}
