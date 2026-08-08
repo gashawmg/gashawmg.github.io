@@ -26,7 +26,7 @@ effectively with an AI tutor.
 
 ## About the author
 
-ChemPal Tutor is built and written by **Gashaw M. Goshu, Ph.D** — a chemist working at the
+ChemPal Tutor is built and written by **Gashaw M. Goshu, Ph.D. in Chemistry**, working at the
 intersection of chemistry education and AI.
 
 [Try ChemPal Tutor free →](https://chempal.pro/)
