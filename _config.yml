@@ -1,10 +1,7 @@
 # ─── Site settings ────────────────────────────────────────────────────────────
 title: ChemPal Tutor Blog
 tagline: Learn chemistry step by step
-description: >-
-  Guides, updates, and study tips from ChemPal Tutor — an AI-powered chemistry
-  tutor with step-by-step explanations, visual molecular structures, practice
-  tools, voice support, and 16-language learning.
+description: "Chemistry guides and study tips from ChemPal Tutor — an AI tutor with step-by-step explanations, molecular structures, and 16-language support."
 
 # IMPORTANT: `url` must be absolute, or social preview images will not render.
 # If you later move the blog to a custom domain (e.g. blog.chempal.pro),
@@ -14,6 +11,17 @@ baseurl: ""   # leave empty for a <username>.github.io repo
 
 author: "Gashaw M. Goshu, Ph.D. in Chemistry"
 lang: en_US
+
+# ─── Social / link previews ───────────────────────────────────────────────────
+twitter:
+  card: summary_large_image      # large preview instead of a small thumbnail
+
+# Default social image for EVERY page that doesn't set its own `image:`
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/chempal-tutor-social.png
 
 # ─── Theme ────────────────────────────────────────────────────────────────────
 theme: minima          # built into GitHub Pages — nothing to install
