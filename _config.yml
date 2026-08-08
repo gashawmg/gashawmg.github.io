@@ -1,0 +1,44 @@
+# ─── Site settings ────────────────────────────────────────────────────────────
+title: ChemPal Tutor Blog
+tagline: Learn chemistry step by step
+description: >-
+  Guides, updates, and study tips from ChemPal Tutor — an AI-powered chemistry
+  tutor with step-by-step explanations, visual molecular structures, practice
+  tools, voice support, and 16-language learning.
+
+# IMPORTANT: `url` must be absolute, or social preview images will not render.
+# If you later move the blog to a custom domain (e.g. blog.chempal.pro),
+# change `url` to that domain and add a CNAME file.
+url: "https://gashawmg.github.io"
+baseurl: ""   # leave empty for a <username>.github.io repo
+
+author: ChemPal Tutor
+lang: en_US
+
+# ─── Theme ────────────────────────────────────────────────────────────────────
+theme: minima          # built into GitHub Pages — nothing to install
+minima:
+  skin: auto           # follows the reader's light/dark preference
+
+# ─── Plugins (all supported natively by GitHub Pages) ─────────────────────────
+plugins:
+  - jekyll-seo-tag     # meta tags, Open Graph, Twitter cards
+  - jekyll-sitemap     # generates /sitemap.xml for search engines
+  - jekyll-feed        # generates /feed.xml (RSS)
+
+# ─── Markdown ─────────────────────────────────────────────────────────────────
+markdown: kramdown
+kramdown:
+  input: GFM
+  toc_levels: 2..3     # controls which headings appear in the {:toc} list
+
+# ─── Links shown in the site header/footer ────────────────────────────────────
+header_pages:
+  - about.md
+
+# ─── Build ────────────────────────────────────────────────────────────────────
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
