@@ -1,0 +1,25 @@
+<!-- Upload to: _includes/head.html
+     This REPLACES Minima 2.5.1's own head include (a file in your site's
+     _includes always wins over the theme's). It reproduces Minima's head
+     exactly, then adds the ChemPal stylesheet last so our rules override. -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {%- seo -%}
+
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+  {%- feed_meta -%}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- ChemPal custom styles — must come after main.css to take precedence -->
+  <link rel="stylesheet" href="{{ '/assets/chempal.css' | relative_url }}">
+
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+</head>
